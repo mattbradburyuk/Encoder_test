@@ -12,6 +12,8 @@ print "setPWM to [100,100]"
 
 t_end = time.time() + 10
 
+a = 0
+
 while time.time() < t_end:
 
     a = a + 1
