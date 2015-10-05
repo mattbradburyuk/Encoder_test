@@ -8,4 +8,4 @@ print "Running Encoder_test"
 
 ET = Encoder_test()
 
-# ET.hw()
+ET.setPWM([100,100])
