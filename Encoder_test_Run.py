@@ -10,6 +10,6 @@ ET.setPWM([100,100])
 
 t_end = time.time() + 60
 
-while time.time() < t_end
+while time.time() < t_end:
 
 ET.setPWM([0,0])
