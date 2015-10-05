@@ -10,7 +10,7 @@ print "setPWM to [100,100]"
 
 ET.setPWM([100,100])
 
-t_end = time.time() + 10
+t_end = time.time() + 2
 
 a = 0
 
