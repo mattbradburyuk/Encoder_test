@@ -6,12 +6,16 @@ print "Running Encoder_test"
 
 ET = Encoder_test()
 
-ET.setPWM([100,100])
+print "setPWM to [100,100]"
 
-t_end = time.time() + 60
+# ET.setPWM([100,100])
+
+t_end = time.time() + 10
 
 while time.time() < t_end:
 
-	a = a + 1
+    a = a + 1
 
-ET.setPWM([0,0])
+print "setPWM to [0,0]"
+
+# ET.setPWM([0,0])

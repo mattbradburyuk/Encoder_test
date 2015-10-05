@@ -23,7 +23,7 @@ LEFT = 0
 RIGHT = 1
 MIN = 0
 MAX = 1
-
+    
 
 class Encoder_test():
 
