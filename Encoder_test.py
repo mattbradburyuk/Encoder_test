@@ -75,7 +75,7 @@ class Encoder_test():
 
 
     def move(self):
-    	sys.stdout.write("moving quickbot forwards"p)
+    	sys.stdout.write("moving quickbot forwards")
 
     	setPWM([100,100])
 
