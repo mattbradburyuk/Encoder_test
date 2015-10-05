@@ -26,7 +26,7 @@ MAX = 1
     
 
 class Encoder_test():
-
+    
 	# === Class Properties ===
     # Parameters
 
