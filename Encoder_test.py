@@ -80,7 +80,7 @@ class Encoder_test():
         ADC.setup()
 
     
-    def run_test():
+    def run_test(self):
 
         # start ADC reading
 
@@ -99,13 +99,13 @@ class Encoder_test():
         test_timer.isRunning = False
 
 
-    def read_adc():
+    def read_adc(self):
         
         l_value = ADC.read_raw(encoderPin(LEFT))
         r_value = ADC.read_raw(encoderPin(RIGHT))
 
         # print 'hello world'
-        # print 'left value: ', l_value, ' right value: ', r_value
+        print 'left value: ', l_value, ' right value: ', r_value
 
 
     # def move(self):
