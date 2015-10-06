@@ -15,7 +15,7 @@ import socket
 import threading
 import numpy as np
 
-import MBTimer as mtb
+import MBTimer as mbt
 
 import Adafruit_BBIO.GPIO as GPIO
 import Adafruit_BBIO.PWM as PWM
