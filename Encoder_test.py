@@ -118,3 +118,8 @@ class Encoder_test():
             GPIO.output(self.dir1Pin[RIGHT], GPIO.LOW)
             GPIO.output(self.dir2Pin[RIGHT], GPIO.LOW)
             PWM.set_duty_cycle(self.pwmPin[RIGHT], 0)
+
+
+
+
+
