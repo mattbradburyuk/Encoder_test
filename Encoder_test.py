@@ -15,6 +15,8 @@ import socket
 import threading
 import numpy as np
 
+import MBTimer as mtb
+
 import Adafruit_BBIO.GPIO as GPIO
 import Adafruit_BBIO.PWM as PWM
 import Adafruit_BBIO.ADC as ADC
@@ -56,7 +58,7 @@ class Encoder_test():
 
     # === Class Methods ===
     # Constructor
-    def __init__(self,):
+    def __init__(self):
     	sys.stdout.write("initialising class\n\n")
 
     	# Initialize GPIO pins
@@ -74,11 +76,42 @@ class Encoder_test():
         # Set motor speed to 0
         self.setPWM([0, 0])
 
+        # Initialize ADC
+        ADC.setup()
 
-    def move(self):
-    	sys.stdout.write("moving quickbot forwards")
+    
+    def run_test():
 
-    	setPWM([100,100])
+        # start ADC reading
+
+        test_timer = mbt.MBTimer(0.1,read_adc())
+        test_timer.start()
+
+        # move robot forward
+
+        # wait for 2 seconds
+        time.sleep(2)
+
+        # stop robot
+
+        # stop ADC reading
+
+        test_timer.isRunning = False
+
+
+    def read_adc():
+        
+        l_value = ADC.read_raw(encoderPin(LEFT))
+        r_value = ADC.read_raw(encoderPin(RIGHT))
+
+        # print 'hello world'
+        # print 'left value: ', l_value, ' right value: ', r_value
+
+
+    # def move(self):
+    # 	sys.stdout.write("moving quickbot forwards")
+
+    # 	setPWM([100,100])
 
 
 
