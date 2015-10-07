@@ -82,9 +82,16 @@ class Encoder_test():
     
     def run_test(self):
 
+        test_duration = 2
+        sample_time = 0.01
+        samples = test_duration/ sample_time
+        results = np.zeros(samples,4)
+
+        print results
+
         # start ADC reading
 
-        test_timer = mbt.MBTimer(0.001,self.read_adc)
+        test_timer = mbt.MBTimer(sample_time,self.read_adc)
         
         print "Start timer"
         test_timer.start()
@@ -94,7 +101,7 @@ class Encoder_test():
         self.setPWM([100,100])
 
         # wait for 2 seconds
-        time.sleep(2)
+        time.sleep(test_duration)
 
         # stop robot
 
@@ -109,6 +116,8 @@ class Encoder_test():
         
         l_value = ADC.read_raw(self.encoderPin[LEFT])
         r_value = ADC.read_raw(self.encoderPin[RIGHT])
+
+        
 
         # print 'hello world'
         print 'left value: ', l_value, ' right value: ', r_value
