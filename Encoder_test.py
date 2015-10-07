@@ -117,7 +117,12 @@ class Encoder_test():
 
         # write out the results 
 
-        print '{0:.1f}'.format(self.results[1,:])
+        r0 = self.results[1,0]
+        r1 = self.results[1,1]
+        r2 = self.results[1,2]
+        r3 = self.results[1,3]
+        
+        print '{0:f} {1:f} {2:f} {3:f} '.format(r0,r1,r2,r3)
 
 
     def read_adc(self):
