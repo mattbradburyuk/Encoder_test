@@ -92,8 +92,6 @@ class Encoder_test():
         samples = test_duration/ sample_time
         self.results = np.zeros((samples,4))
 
-        print self.results
-
         # start ADC reading
 
         test_timer = mbt.MBTimer(sample_time,self.read_adc)
@@ -132,7 +130,7 @@ class Encoder_test():
         self.results[self.results_ind,2] = l_value
         self.results[self.results_ind,3] = r_value
 
-        results_ind = results_ind + 1
+        self.results_ind = self.results_ind + 1
 
         # print 'hello world'
         # print 'left value: ', l_value, ' right value: ', r_value
