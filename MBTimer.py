@@ -46,11 +46,11 @@ class MBTimer(threading.Thread):
 
 
 
-        t_start = time.clock()
+        t_start = time.time()
         next_step = t_start + self.interval
 
         while self.isRunning is True:
-            while time.clock() < next_step:
+            while time.time() < next_step:
                 pass
 
             next_step = next_step + self.interval
