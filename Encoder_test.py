@@ -84,7 +84,7 @@ class Encoder_test():
 
         # start ADC reading
 
-        test_timer = mbt.MBTimer(0.1,read_adc())
+        test_timer = mbt.MBTimer(0.1,self.read_adc())
         
         print "Start timer"
         test_timer.start()
