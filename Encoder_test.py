@@ -122,7 +122,10 @@ class Encoder_test():
         r2 = self.results[1,2]
         r3 = self.results[1,3]
         
-        print '{0:4.0f} {1:2.2f} {2:4.0f} {3:4.0f} '.format(r0,r1,r2,r3)
+        
+        for x in range(0,results_ind)
+
+            print '{0:4.0f} {1:2.2f} {2:4.0f} {3:4.0f} '.format(r0,r1,r2,r3)
 
 
     def read_adc(self):
