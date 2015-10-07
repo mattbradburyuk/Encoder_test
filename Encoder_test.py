@@ -37,7 +37,7 @@ class Encoder_test():
 
     # collection of test results
     results_ind = 0
-    results
+    results = 0
 
     # Pins
     ledPin = 'USR1'
@@ -88,6 +88,7 @@ class Encoder_test():
 
         test_duration = 2
         sample_time = 0.01
+
         samples = test_duration/ sample_time
         self.results = np.zeros((samples,4))
 
