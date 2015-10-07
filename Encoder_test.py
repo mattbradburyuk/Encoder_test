@@ -37,7 +37,7 @@ class Encoder_test():
 
     # collection of test results
     results_ind = 0
-    self.results
+    results
 
     # Pins
     ledPin = 'USR1'
@@ -126,10 +126,10 @@ class Encoder_test():
         l_value = ADC.read_raw(self.encoderPin[LEFT])
         r_value = ADC.read_raw(self.encoderPin[RIGHT])
 
-        self.results[results_ind,0] = results_ind
-        self.results[results_ind,1] = time.clock()
-        self.results[results_ind,2] = l_value
-        self.results[results_ind,3] = r_value
+        self.results[self.results_ind,0] = self.results_ind
+        self.results[self.results_ind,1] = time.clock()
+        self.results[self.results_ind,2] = l_value
+        self.results[self.results_ind,3] = r_value
 
         results_ind = results_ind + 1
 
