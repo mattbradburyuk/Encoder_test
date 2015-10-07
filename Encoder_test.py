@@ -117,13 +117,15 @@ class Encoder_test():
 
         # write out the results 
 
-        r0 = self.results[1,0]
-        r1 = self.results[1,1]
-        r2 = self.results[1,2]
-        r3 = self.results[1,3]
+
         
         
         for x in range(0,self.results_ind):
+            r0 = self.results[x,0]
+            r1 = self.results[x,1]
+            r2 = self.results[x,2]
+            r3 = self.results[x,3] 
+
             print '{0:4.0f} {1:2.2f} {2:4.0f} {3:4.0f} '.format(r0,r1,r2,r3)
 
 
