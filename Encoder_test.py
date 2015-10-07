@@ -37,7 +37,7 @@ class Encoder_test():
 
     # collection of test results
     results_ind = 0
-    results 
+    results = none
 
     # Pins
     ledPin = 'USR1'
