@@ -91,16 +91,19 @@ class Encoder_test():
 
         # move robot forward
 
+        self.setPWM([100,100])
+
         # wait for 2 seconds
         time.sleep(2)
 
         # stop robot
 
+        self.setPWM([0,0])
         # stop ADC reading
 
-        print "Stop timer"
+        
         test_timer.isRunning = False
-
+        print "Stop timer"
 
     def read_adc(self):
         
