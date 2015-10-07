@@ -127,7 +127,7 @@ class Encoder_test():
 
         
         
-        for x in range(0,self.results_ind):
+        for x in range(0,samples):
             r0 = self.results[x,0]
             r1 = self.results[x,1]
             r2 = self.results[x,2]
