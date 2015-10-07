@@ -92,6 +92,10 @@ class Encoder_test():
         samples = test_duration/ sample_time
         self.results = np.zeros((samples,4))
 
+        # move robot forward
+
+        self.setPWM([100,100])        
+
         # start ADC reading
 
         test_timer = mbt.MBTimer(sample_time,self.read_adc)
@@ -99,9 +103,7 @@ class Encoder_test():
         print "Start timer"
         test_timer.start()
 
-        # move robot forward
 
-        self.setPWM([100,100])
 
         # wait for 2 seconds
         time.sleep(test_duration)
@@ -114,6 +116,11 @@ class Encoder_test():
         
         test_timer.isRunning = False
         print "Stop timer"
+
+        # stop robot
+
+        self.setPWM([0,0])
+
 
         # write out the results 
 
