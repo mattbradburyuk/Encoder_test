@@ -87,12 +87,12 @@ class Encoder_test():
     def run_test(self):
 
         test_duration = 1
-        sample_time = 0.005
+        sample_time = 0.001
 
         samples = test_duration/ sample_time
 
         print samples
-        
+
         self.results = np.zeros((samples,4))
 
         # move robot forward
@@ -141,11 +141,13 @@ class Encoder_test():
 
     def read_adc(self):
         
+        t = time.time()
+
         l_value = ADC.read_raw(self.encoderPin[LEFT])
         r_value = ADC.read_raw(self.encoderPin[RIGHT])
 
         self.results[self.results_ind,0] = self.results_ind
-        self.results[self.results_ind,1] = time.time()
+        self.results[self.results_ind,1] = t
         self.results[self.results_ind,2] = l_value
         self.results[self.results_ind,3] = r_value
 
