@@ -85,7 +85,7 @@ class Encoder_test():
         test_duration = 2
         sample_time = 0.01
         samples = test_duration/ sample_time
-        results = np.zeros(samples,4)
+        results = np.zeros((samples,4))
 
         print results
 
