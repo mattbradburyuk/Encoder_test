@@ -90,6 +90,9 @@ class Encoder_test():
         sample_time = 0.005
 
         samples = test_duration/ sample_time
+
+        print samples
+        
         self.results = np.zeros((samples,4))
 
         # move robot forward
