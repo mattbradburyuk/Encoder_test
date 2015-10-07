@@ -117,7 +117,7 @@ class Encoder_test():
 
         # write out the results 
 
-        print self.results
+        print '{}'.format(self.results[1,:])
 
 
     def read_adc(self):
