@@ -35,6 +35,10 @@ class Encoder_test():
 
     test_prop = 'hello world'
 
+    # collection of test results
+    results_ind = 0
+    self.results
+
     # Pins
     ledPin = 'USR1'
 
@@ -85,7 +89,7 @@ class Encoder_test():
         test_duration = 2
         sample_time = 0.01
         samples = test_duration/ sample_time
-        results = np.zeros((samples,4))
+        self.results = np.zeros((samples,4))
 
         print results
 
@@ -112,15 +116,25 @@ class Encoder_test():
         test_timer.isRunning = False
         print "Stop timer"
 
+        # write out the results 
+
+        print self.results
+
+
     def read_adc(self):
         
         l_value = ADC.read_raw(self.encoderPin[LEFT])
         r_value = ADC.read_raw(self.encoderPin[RIGHT])
 
-        
+        self.results[results_ind,0] = results_ind
+        self.results[results_ind,1] = time.clock()
+        self.results[results_ind,2] = l_value
+        self.results[results_ind,3] = r_value
+
+        results_ind = results_ind + 1
 
         # print 'hello world'
-        print 'left value: ', l_value, ' right value: ', r_value
+        # print 'left value: ', l_value, ' right value: ', r_value
 
 
     # def move(self):
