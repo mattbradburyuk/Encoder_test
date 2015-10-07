@@ -37,7 +37,7 @@ class Encoder_test():
 
     # collection of test results
     results_ind = 0
-    results = None
+    results 
 
     # Pins
     ledPin = 'USR1'
@@ -92,7 +92,7 @@ class Encoder_test():
         samples = test_duration/ sample_time
         self.results = np.zeros((samples,4))
 
-        print results
+        print self.results
 
         # start ADC reading
 
