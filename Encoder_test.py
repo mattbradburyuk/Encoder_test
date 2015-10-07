@@ -104,8 +104,8 @@ class Encoder_test():
 
     def read_adc(self):
         
-        l_value = ADC.read_raw(encoderPin(LEFT))
-        r_value = ADC.read_raw(encoderPin(RIGHT))
+        l_value = ADC.read_raw(self.encoderPin(LEFT))
+        r_value = ADC.read_raw(self.encoderPin(RIGHT))
 
         # print 'hello world'
         print 'left value: ', l_value, ' right value: ', r_value
