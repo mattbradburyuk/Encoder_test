@@ -85,6 +85,8 @@ class Encoder_test():
         # start ADC reading
 
         test_timer = mbt.MBTimer(0.1,read_adc())
+        
+        print "Start timer"
         test_timer.start()
 
         # move robot forward
@@ -96,6 +98,7 @@ class Encoder_test():
 
         # stop ADC reading
 
+        print "Stop timer"
         test_timer.isRunning = False
 
 
