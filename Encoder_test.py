@@ -51,8 +51,8 @@ class Encoder_test():
 
     # ADC Pins
     irPin = ('P9_38', 'P9_40', 'P9_36', 'P9_35', 'P9_33')
-    encoderPin = ('P9_39', 'P9_37')
-
+    encoderPin = ('P9_39', 'P9_37') # encoders
+    encoderPin = ('P9_38', 'P9_35') # ir sensors 2 and 4
 
 
     # Constraints
@@ -99,7 +99,7 @@ class Encoder_test():
 
         # move robot forward
 
-        self.setPWM([100,100])        
+        # self.setPWM([100,100])        
 
         # start ADC reading
 
@@ -115,7 +115,7 @@ class Encoder_test():
 
         # stop robot
 
-        self.setPWM([0,0])
+        # self.setPWM([0,0])
         # stop ADC reading
 
         
