@@ -51,7 +51,7 @@ class Encoder_test():
 
     # ADC Pins
     irPin = ('P9_38', 'P9_40', 'P9_36', 'P9_35', 'P9_33')
-    encoderPin = ('P9_39', 'P9_37') # encoders
+    # encoderPin = ('P9_39', 'P9_37') # encoders
     encoderPin = ('P9_38', 'P9_35') # ir sensors 2 and 4
 
 
