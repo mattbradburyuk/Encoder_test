@@ -5,6 +5,8 @@
 
 encoder test working
 
+modifying to test ir sensor function
+
 """
 
 from __future__ import division
