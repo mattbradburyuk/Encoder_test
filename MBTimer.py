@@ -1,4 +1,5 @@
 """
+
 Timer class to schedule a function every n seconds
 
 roughly +/ - 0.001 accurate at 0.005 sample time

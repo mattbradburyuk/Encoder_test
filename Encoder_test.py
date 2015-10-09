@@ -3,7 +3,7 @@
 @ author Matthew Bradbury
 @ date: 05/10/2015
 
-add test change
+encoder test working
 
 """
 

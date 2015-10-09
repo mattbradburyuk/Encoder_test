@@ -1,3 +1,8 @@
+"""
+Script to run encoder Encoder_test
+
+"""
+
 
 from Encoder_test import *
 import time
