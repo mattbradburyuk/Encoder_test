@@ -89,7 +89,7 @@ class Encoder_test():
     def run_test(self):
 
         test_duration = 2
-        sample_time = 0.01
+        sample_time = 0.0001
 
         samples = test_duration/ sample_time
 
@@ -143,6 +143,13 @@ class Encoder_test():
 
     def read_adc(self):
         
+        # results array
+        # coulmn 0: results_ind ie sample number
+        # column 1: system time from time.time()
+        # column 2: sample value from left ADC
+        # column 3: sample value from right ADC
+
+
         t = time.time()
 
         l_value = ADC.read_raw(self.encoderPin[LEFT])
