@@ -99,7 +99,7 @@ class Encoder_test():
 
         # move robot forward
 
-        # self.setPWM([100,100])        
+        self.setPWM([-100,-100])        
 
         # start ADC reading
 
