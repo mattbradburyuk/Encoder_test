@@ -91,7 +91,7 @@ class Encoder_test():
     def run_test(self):
 
         test_duration = 2
-        sample_time = 0.01
+        sample_time = 0.001
 
         samples = test_duration/ sample_time
 
